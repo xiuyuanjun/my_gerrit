@@ -19,6 +19,15 @@ Pull the refs:
 
 git pull origin refs/changes/20/1220/2
 
+#如果报错如：
+#fatal: 'origin' does not appear to be a git repository
+#fatal: Could not read from remote repository.
+#可以执行：
+#git remote add origin http://something.com:8081/MyProject
+
+再执行：
+git pull origin refs/changes/20/1220/2
+
 This will create a Git commit point that you could eventually rebase:
 
 git rebase
